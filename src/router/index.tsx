@@ -1,0 +1,59 @@
+import { createBrowserRouter } from 'react-router-dom';
+
+import ProjectBoard from 'pages/ProjectBoard';
+import ProjectCreate from 'pages/ProjectCreate';
+import ProjectManagement from 'pages/ProjectManagement';
+import SignUp from 'pages/SignUp';
+import SignIn from 'pages/SingIn';
+import UserManagement from 'pages/UserManagement';
+import AppTemplate from 'templates/AppTemplate';
+import AuthTemplate from 'templates/AuthTemplate';
+
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <AuthTemplate />,
+    children: [
+      {
+        index: true,
+        element: <SignIn />,
+      },
+      {
+        path: 'signin',
+        element: <SignIn />,
+      },
+      {
+        path: 'signup',
+        element: <SignUp />,
+      },
+    ],
+  },
+  {
+    path: '/project',
+    element: <AppTemplate />,
+    children: [
+      {
+        index: true,
+        element: <ProjectManagement />,
+      },
+      {
+        path: ':projectId',
+        element: <ProjectBoard />,
+      },
+      {
+        path: 'create',
+        element: <ProjectCreate />,
+      },
+    ],
+  },
+  {
+    path: '/users',
+    element: <AppTemplate />,
+    children: [
+      {
+        index: true,
+        element: <UserManagement />,
+      },
+    ],
+  },
+]);
