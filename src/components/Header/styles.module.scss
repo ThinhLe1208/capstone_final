@@ -1,0 +1,64 @@
+.headerWrapper {
+  min-height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 0;
+
+  .iconBtn {
+    font-size: 22px;
+    width: 48px;
+    height: 48px;
+    color: var(--sub-text-color);
+    border-radius: 100%;
+    outline: none;
+  }
+
+  .leftSide {
+    .sidebarBtn {
+      margin-left: -14px;
+    }
+  }
+
+  .rightSide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 4px;
+
+    .icon {
+      font-size: 16px;
+      color: var(--sub-text-color);
+    }
+
+    .divider {
+      width: 1px;
+      height: 22px;
+      background-color: var(--sub-text-color);
+      opacity: 0.4;
+      margin: 0 4px;
+    }
+
+    .userBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--sub-text-color);
+      column-gap: 6px;
+      padding: 20px 6px;
+
+      .greeting {
+        display: block;
+
+        @media only screen and (max-width: 576px) {
+          display: none;
+        }
+
+        .name {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

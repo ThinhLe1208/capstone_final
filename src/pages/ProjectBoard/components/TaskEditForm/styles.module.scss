@@ -1,0 +1,49 @@
+.taskEditFormWrapper {
+  width: 910px;
+
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
+
+  .row {
+    margin-bottom: var(--row-space-form);
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--row-space-form);
+
+    button {
+      padding: 0;
+    }
+  }
+
+  .taskName {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .description,
+  .estimate {
+    font-weight: 600;
+    margin-left: 2px;
+    margin-bottom: 6px;
+  }
+
+  .subTitle {
+    color: var(--sub-text-color);
+  }
+}
+
+.timePopover {
+  h3 {
+    margin-bottom: 6px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}

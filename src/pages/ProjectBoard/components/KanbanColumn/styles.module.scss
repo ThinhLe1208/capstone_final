@@ -1,0 +1,65 @@
+.kanbanColumWrapper {
+  width: 324px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding-bottom: 12px;
+
+  .header {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    color: var(--white);
+    border-radius: 6px;
+    padding: 14px 12px 12px;
+    box-shadow: var(--box-shadow-1);
+
+    .leftSide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .name {
+        display: block;
+        max-width: 210px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .issues {
+    min-height: 10px;
+  }
+
+  .addIssueBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-700);
+    background-color: transparent;
+    border-radius: 8px;
+
+    padding: 8px 0;
+    transition: all linear 0.2s;
+
+    opacity: 0.7;
+    font-weight: 500;
+    &:hover {
+      transform: translateY(-1px);
+      background-color: var(--primary-150);
+      opacity: 1;
+    }
+  }
+}
