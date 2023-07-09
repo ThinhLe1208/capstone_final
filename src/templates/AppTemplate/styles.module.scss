@@ -1,0 +1,14 @@
+.appTemplateWrapper {
+  height: 100vh;
+
+  .body {
+    padding-left: var(--wrapper-padding-x);
+    padding-right: var(--wrapper-padding-x);
+    overflow: auto;
+
+    @media only screen and (max-width: 576px) {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+}

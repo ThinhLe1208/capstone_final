@@ -1,0 +1,53 @@
+.authTemplateWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+  }
+
+  .leftSide {
+    height: 100%;
+    position: relative;
+    width: 50%;
+
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 110%;
+
+      @media only screen and (max-width: 1200px) {
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .rightSide {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+    padding: 0;
+
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      padding: 20px 0;
+    }
+  }
+}
