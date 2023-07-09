@@ -1,0 +1,13 @@
+.bgLoadingWrapper {
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+
+  img {
+    max-width: 160px;
+  }
+}

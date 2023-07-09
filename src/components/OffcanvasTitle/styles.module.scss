@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-primary);
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .text {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}

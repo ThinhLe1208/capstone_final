@@ -1,0 +1,21 @@
+$logo-height: 32px;
+$logo-margin-y: 20px;
+
+.sidebarWrapper {
+  box-shadow: var(--box-shadow-1);
+  border: none;
+  transition: all ease 0.2s;
+
+  .logo {
+    height: $logo-height;
+    object-fit: contain;
+    margin: $logo-margin-y auto;
+  }
+
+  .menu {
+    height: calc(100% - $logo-height - $logo-margin-y * 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
