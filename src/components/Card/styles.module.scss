@@ -1,0 +1,12 @@
+.cardWrapper {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow-1);
+  border-radius: var(--border-rad-2);
+  padding: 14px 30px;
+  overflow: hidden;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  @media only screen and (max-width: 576px) {
+    padding: 14px 8px;
+  }
+}

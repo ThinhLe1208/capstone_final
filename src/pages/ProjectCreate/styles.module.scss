@@ -1,0 +1,13 @@
+.projectCreateWrapper {
+  .row {
+    margin-bottom: var(--row-space-form);
+  }
+
+  .buttons {
+    text-align: end;
+
+    button + button {
+      margin-left: var(--button-space);
+    }
+  }
+}

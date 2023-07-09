@@ -1,0 +1,23 @@
+.headingWrapper {
+  .breadcrumbs {
+    & > ol > li > a {
+      font-size: 14px;
+      color: var(--sub-text-color);
+    }
+
+    & > ol > li > span {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-color);
+    }
+  }
+
+  .title {
+    font-family: var(--font-family);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-top: calc(var(--row-space) + 8px);
+    margin-bottom: var(--row-space);
+  }
+}
