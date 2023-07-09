@@ -1,0 +1,32 @@
+.kanbanWrapper {
+  .columns {
+    min-height: 480px;
+    gap: 53px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .addListBtn {
+    width: 100%;
+    width: 324px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-700);
+    background-color: transparent;
+    border-radius: 8px;
+
+    padding: 8px 0;
+    transition: all linear 0.2s;
+
+    opacity: 0.7;
+    font-weight: 500;
+    &:hover {
+      transform: translateY(-1px);
+      background-color: var(--primary-150);
+      opacity: 1;
+    }
+  }
+}

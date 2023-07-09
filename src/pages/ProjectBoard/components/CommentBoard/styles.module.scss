@@ -1,0 +1,21 @@
+.commentBoardWrapper {
+  .label {
+    font-weight: 600;
+    margin-left: 2px;
+    margin-bottom: 14px;
+  }
+
+  .rightSide {
+    padding-left: 10px;
+
+    .commentBtns {
+      margin-top: var(--label-bottom-space);
+    }
+  }
+
+  .commentList {
+    max-height: 300px;
+    padding-right: 12px;
+    overflow-y: auto;
+  }
+}
