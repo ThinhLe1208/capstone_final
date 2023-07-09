@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import ErrorPage from 'pages/ErrorPage';
 import ProjectBoard from 'pages/ProjectBoard';
 import ProjectCreate from 'pages/ProjectCreate';
 import ProjectManagement from 'pages/ProjectManagement';
@@ -13,6 +14,7 @@ export const router = createBrowserRouter([
   {
     path: '/',
     element: <AuthTemplate />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -31,6 +33,7 @@ export const router = createBrowserRouter([
   {
     path: '/project',
     element: <AppTemplate />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -49,6 +52,7 @@ export const router = createBrowserRouter([
   {
     path: '/users',
     element: <AppTemplate />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
